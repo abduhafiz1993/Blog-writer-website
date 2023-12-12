@@ -10,7 +10,6 @@ posts = [
         'content': 'Second post content',
         'data_posted': 'April 21, 2018'
     },
-    
     {
         'author': 'Jane Doe',
         'title': 'Blog Post content',
@@ -26,4 +25,4 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template('about.html')
+    return render_template('about.html', title= "About")
